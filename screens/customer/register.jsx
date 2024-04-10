@@ -7,6 +7,7 @@ import colors from '../../constants/colors';
 import axios from 'axios';
 import { API_URL } from '../../constants/config';
 
+
 const Register = () => {
     const navigation = useNavigation();
 
@@ -92,8 +93,8 @@ const Register = () => {
                             autoCapitalize="none"
                             style={styles.input}
                             value={lastname}
-                            onChangeText={setLastname}
-                        />
+                            onChangeText={setLastname}></TextInput> 
+                            
                         <Text>Género</Text>
                         <RNPickerSelect
                             style={pickerSelectStyles}
@@ -127,16 +128,13 @@ const Register = () => {
                             secureTextEntry
                             style={styles.input}
                             value={password}
-                            onChangeText={setPassword}
-                        />
+                            onChangeText={setPassword}></TextInput>
+
                         <Text>Confirma contraseña</Text>
-                        <TextInput
-                            placeholder="password"
-                            secureTextEntry
-                            style={styles.input}
-                            value={confirmPassword}
-                            onChangeText={setConfirmPassword}
-                        />
+                        <TextInput placeholder="password"
+                        secureTextEntry
+                        style={style.input}
+                        value={confirmPassword}></TextInput>
                     </View>
                 </View>
             </ScrollView>

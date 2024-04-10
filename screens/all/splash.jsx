@@ -19,7 +19,7 @@ const Splash = ({ navigation }) =>{
         <View style={styles.container}>
             <LottieView
             style={{width: 200, height: 200}}
-                source={require('../../assets/animations/Animation - 1709653976457.json')}
+                source={require('../../assets/animations/Animation - 1712789080040.json')}
                 autoPlay
                 loop
             />
