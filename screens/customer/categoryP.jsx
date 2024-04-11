@@ -78,12 +78,11 @@ const CategoryP = ({ route }) => {
                         keyExtractor={item => item.id.toString()}
                         renderItem={({ item }) => (
                             <MeatCard
-                                id={item.id}
-                                name={item.name}
-                                imageUrl={item.urlPhoto}
-                                description={item.description}
-                                quantity={item.quantity}
-                            />
+                            id={item.id}
+                            name={item.name}
+                            imagenUrl={item.urlPhoto}
+                            description={item.description}
+                            quantity={item.quantity}></MeatCard>
                         )}
                     />
                 </View>

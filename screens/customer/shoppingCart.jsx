@@ -218,23 +218,20 @@ const ShoppingCart = () => {
 
       {/* Modal para editar la cantidad */}
       <Modal
-        visible={isModalVisible}
-        animationType="slide"
-        transparent={true}
-      >
+        visible={isModalVisible} animationType="slide" transparent={true}>
+      
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <TouchableOpacity style={styles.closeButton} onPress={handleCloseModal}>
               <Ionicons name="close-circle" size={24} color={colors.red3} />
             </TouchableOpacity>
             <Text style={styles.modalTitle}>Editar Cantidad</Text>
-            <TextInput
-              style={styles.input}
+            <TextInput style={styles.input}
               placeholder="Cantidad"
               keyboardType="numeric"
               value={quantityInput}
-              onChangeText={text => setQuantityInput(text)}
-            />
+              onChangeText={text => setQuantityInput(text)}>
+            </TextInput>
             <View style={styles.modalButtons}>
               <TouchableOpacity style={styles.buyButton} onPress={handleUpdateQuantity}>
                 <Text style={styles.editButtonText}>Actualizar</Text>
