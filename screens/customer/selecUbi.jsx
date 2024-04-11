@@ -90,17 +90,9 @@ const SelecciónUbicación = ({ navigation }) => {
     return (
         <View style={styles.container}>
             {userLocation && (
-                <MapView
-                    style={styles.map}
-                    provider={PROVIDER_GOOGLE}
-                    initialRegion={{
-                        latitude: userLocation.latitude,
-                        longitude: userLocation.longitude,
-                        latitudeDelta: 0.001,
-                        longitudeDelta: 0.006,
-                    }}
-                    onPress={handleMapPress}
-                >
+                <MapView style={styles.map}
+                provider={PROVIDER_GOOGLE}
+                initialRegion={{latitude:userLocation.latitude, longitude:userLocation.longitude, latitudeDelta: 0.001, longitudeDelta: 0.006,}}onPress={handleMapPress}>
                     {selectedLocation && <Marker coordinate={selectedLocation} />}
                 </MapView>
             )}

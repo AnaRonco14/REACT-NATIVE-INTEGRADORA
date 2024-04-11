@@ -137,14 +137,12 @@ const IndexScreen = () => {
                         data={filteredMeats}
                         renderItem={({ item, index }) => (
                             index !== 0 &&
-                            <MeatCard
-                                id={item.id}
+                            <MeatCard id={item.id}
                                 name={item.name}
                                 quantity={item.quantity}
                                 imageUrl={item.imageUrl}
                                 description={item.description}
-                                style={styles.recommendedCard}
-                            />
+                                style={styles.recommendedCard}/>
                         )}
                         keyExtractor={(item) => item.id}
                     />

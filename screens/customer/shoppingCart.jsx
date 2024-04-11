@@ -223,7 +223,10 @@ const ShoppingCart = () => {
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <TouchableOpacity style={styles.closeButton} onPress={handleCloseModal}>
-              <Ionicons name="close-circle" size={24} color={colors.red3} />
+              <Ionicons
+              name="close-circle"
+              size={24}
+              color={colors.red3}/>
             </TouchableOpacity>
             <Text style={styles.modalTitle}>Editar Cantidad</Text>
             <TextInput style={styles.input}
